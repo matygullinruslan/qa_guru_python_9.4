@@ -30,11 +30,9 @@ def test_rectangle():
     assert perimeter == 60
 
 
-import math
-
-# TODO сосчитайте площадь
-area = 10 * 20
-assert area == 200
+    # TODO сосчитайте площадь
+    area = a * b
+    assert area == 200
 
 
 def test_circle():
