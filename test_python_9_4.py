@@ -9,6 +9,7 @@ def test_greeting():
     age = 25
     years = " лет"
     output = "Привет," + name + "!" " Тебе " + str(age) + years + "."
+    print(output)
     "# Проверяем результат"
     assert output == "Привет, Анна! Тебе 25 лет."
 
@@ -25,7 +26,7 @@ def test_rectangle():
     b = 20
 
     # TODO сосчитайте периметр
-    perimeter = (10 + 20) * 2
+    perimeter = (a + b) * 2
     assert perimeter == 60
 
 
@@ -42,15 +43,16 @@ def test_circle():
  Используйте константу PI
  """
 
-
 r = 23
 
 # TODO сосчитайте площадь
 area = r**2*math.pi
+print(area)
 assert area == 1661.9025137490005
 
 # TODO сосчитайте длину окружности
 length = 2*math.pi*r
+print(length)
 assert length == 144.51326206513048
 
 
@@ -63,7 +65,7 @@ import math
 
 # TODO создайте список
 
-l = (random.sample(range(100), 10))
+l = (random.sample(range(1, 101), 10))
 l.sort()
 assert len(l) == 10
 assert l[0] < l[-1]
@@ -94,6 +96,6 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
     d = dict(zip(second, first))
-
+    print(d)
     assert isinstance(d, dict)
     assert len(d) == 5
